@@ -208,14 +208,11 @@ Registeration Number : 212221040169
     public View getView(int position, View view, ViewGroup parent) {
         LayoutInflater inflater=context.getLayoutInflater();
         View rowView=inflater.inflate(R.layout.mylist, null,true);
-
         TextView titleText = (TextView) rowView.findViewById(R.id.title);
         ImageView imageView = (ImageView) rowView.findViewById(R.id.icon);
-
         titleText.setText(maintitle[position]);
         imageView.setImageResource(imgid[position]);
-        return rowView;
-    };
+        return rowView;};
     }
 
 ## OUTPUT:
